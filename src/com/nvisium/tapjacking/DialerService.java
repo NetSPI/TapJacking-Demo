@@ -31,7 +31,6 @@ public class DialerService extends Service {
 		toast.setGravity(Gravity.FILL, 0, 0);
 		fireLongToast(toast);
 		launchDialer();
-
 	}
 
 	// this link helped:
@@ -71,15 +70,14 @@ public class DialerService extends Service {
 					}
 				} catch (Exception e) {
 				}
-
 				stopSelf();
-
 			}
 		};
 		t.start();
 	}
 
 	private void launchDialer() {
+		
 		Thread t = new Thread() {
 			public void run() {
 				/*
@@ -101,5 +99,4 @@ public class DialerService extends Service {
 		};
 		t.start();
 	}
-
 }

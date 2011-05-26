@@ -21,7 +21,7 @@ public class BackgroundInstallerService extends Service {
 
 	@Override
 	public void onCreate() {
-
+		
 		super.onCreate();
 		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		// create first toast
@@ -30,10 +30,8 @@ public class BackgroundInstallerService extends Service {
 		View view = inflater.inflate(R.layout.installer_layout, null);
 		toast.setView(view);
 		toast.setGravity(Gravity.FILL, 0, 0);
-
 		fireLongToast(toast);
 		launchMarket();
-
 	}
 
 	// this link helped:
@@ -83,6 +81,7 @@ public class BackgroundInstallerService extends Service {
 	}
 
 	private void launchMarket() {
+		
 		Thread t = new Thread() {
 			public void run() {
 				/*
