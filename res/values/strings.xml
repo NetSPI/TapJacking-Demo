@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">TapJacking Demo</string>
+	<string name="makeCall">Dialer Demo</string>
+	<string name="backgroundInstaller">App Install Demo</string>
+	<string name="alienText">The green alien wants to take over Earth. Crush him
+		before it\'s too late!</string>
+	<string name="moreCowbell">We need more cowbell. Keep clicking on the cowbell
+		until we have enough!</string>
+	<string name="appDescription">This application demonstrates TapJacking. In the
+		dialer demo, a phone call gets made by clicking on a hidden dialer. In
+		the installer demo, you will install a non-malicious application in
+		the background.</string>
+</resources>
