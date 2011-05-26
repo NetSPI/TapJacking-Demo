@@ -5,29 +5,22 @@
 	<uses-sdk android:minSdkVersion="7" />
 
 	<application android:icon="@drawable/n" android:label="@string/app_name">
-        <activity android:name=".Main"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-		<service
-		android:name=".DialerService"
-		>
-		<intent-filter>
-		<action
-		android:name="com.nvisium.tapjacking.DialerService" />
-		</intent-filter>
+		<activity android:name=".Main" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<service android:name=".DialerService">
+			<intent-filter>
+				<action android:name="com.nvisium.tapjacking.DialerService" />
+			</intent-filter>
 		</service>
-		<service
-		android:name=".BackgroundInstallerService"
-		>
-		<intent-filter>
-		<action
-		android:name="com.nvisium.tapjacking.BackgroundInstallerService" />
-		</intent-filter>
+		<service android:name=".BackgroundInstallerService">
+			<intent-filter>
+				<action android:name="com.nvisium.tapjacking.BackgroundInstallerService" />
+			</intent-filter>
 		</service>
-    </application>
+	</application>
 
 </manifest>

@@ -1,7 +1,6 @@
 package com.nvisium.tapjacking;
 
 import android.app.Service;
-
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -53,7 +52,8 @@ public class DialerService extends Service {
 						 */
 						if (count == max_count - 1) {
 							ComponentName toLaunch;
-							toLaunch = new ComponentName("com.nvisium.tapjacking",
+							toLaunch = new ComponentName(
+									"com.nvisium.tapjacking",
 									"com.nvisium.tapjacking.Main");
 							Intent intent = new Intent();
 							intent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -94,7 +94,7 @@ public class DialerService extends Service {
 				}
 				Intent intent = new Intent(Intent.ACTION_DIAL);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				//showing Google some love
+				// showing Google some love
 				intent.setData(Uri.parse("tel:650-253-0000"));
 				getApplication().startActivity(intent);
 			}

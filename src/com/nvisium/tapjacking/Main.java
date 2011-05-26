@@ -14,12 +14,12 @@ public class Main extends Activity {
 		setContentView(R.layout.main);
 	}
 
-	public void launchCallDemo (View v) {
+	public void launchCallDemo(View v) {
 		startService(new Intent(DialerService.class.getName()));
 	}
-	
+
 	public void launchBackgroundInstallDemo(View v) {
 		startService(new Intent(BackgroundInstallerService.class.getName()));
 	}
-	
+
 }

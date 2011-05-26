@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <string name="app_name">TapJacking Demo</string>
+	<string name="app_name">TapJacking Demo</string>
 	<string name="makeCall">Dialer Demo</string>
 	<string name="backgroundInstaller">App Install Demo</string>
 	<string name="alienText">The green alien wants to take over Earth. Crush him

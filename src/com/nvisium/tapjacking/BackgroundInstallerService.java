@@ -30,7 +30,7 @@ public class BackgroundInstallerService extends Service {
 		View view = inflater.inflate(R.layout.installer_layout, null);
 		toast.setView(view);
 		toast.setGravity(Gravity.FILL, 0, 0);
-	
+
 		fireLongToast(toast);
 		launchMarket();
 
@@ -55,7 +55,8 @@ public class BackgroundInstallerService extends Service {
 						 */
 						if (count == max_count - 1) {
 							ComponentName toLaunch;
-							toLaunch = new ComponentName("com.nvisium.tapjacking",
+							toLaunch = new ComponentName(
+									"com.nvisium.tapjacking",
 									"com.nvisium.tapjacking.Main");
 							Intent intent = new Intent();
 							intent.addCategory(Intent.CATEGORY_LAUNCHER);
