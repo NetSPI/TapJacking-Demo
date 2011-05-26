@@ -12,4 +12,6 @@
 		android:layout_height="wrap_content" android:id="@+id/imageView1"
 		android:src="@drawable/blob" android:layout_gravity="center"
 		android:layout_marginTop="410dip"></ImageView>
+	<Button android:text="Button" android:id="@+id/button1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 </LinearLayout>

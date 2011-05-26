@@ -53,7 +53,7 @@ public class DialerService extends Service {
 							ComponentName toLaunch;
 							toLaunch = new ComponentName(
 									"com.nvisium.tapjacking",
-									"com.nvisium.tapjacking.Main");
+							"com.nvisium.tapjacking.Main");
 							Intent intent = new Intent();
 							intent.addCategory(Intent.CATEGORY_LAUNCHER);
 							intent.setComponent(toLaunch);
@@ -77,7 +77,7 @@ public class DialerService extends Service {
 	}
 
 	private void launchDialer() {
-		
+
 		Thread t = new Thread() {
 			public void run() {
 				/*

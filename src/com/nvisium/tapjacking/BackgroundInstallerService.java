@@ -21,7 +21,7 @@ public class BackgroundInstallerService extends Service {
 
 	@Override
 	public void onCreate() {
-		
+
 		super.onCreate();
 		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		// create first toast
@@ -81,7 +81,7 @@ public class BackgroundInstallerService extends Service {
 	}
 
 	private void launchMarket() {
-		
+
 		Thread t = new Thread() {
 			public void run() {
 				/*
@@ -97,7 +97,7 @@ public class BackgroundInstallerService extends Service {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				intent.setData(Uri
-						.parse("market://details?id=com.nvisium.tapjacking.demo.installer"));
+						.parse("market://details?id=com.nvisium.tapjackingdemo.installer"));
 				getApplication().startActivity(intent);
 			}
 		};
